@@ -11,11 +11,15 @@
           box-sizing: border-box;
 }
 
-:focus, :active {
+:hover, :focus, :active {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   outline: none;
 }
 
-a:focus, a:active {
+a::hover, a:focus, a:active {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   outline: none;
 }
 
@@ -133,6 +137,8 @@ body {
   border-top: 1px solid #FFFFFF32;
   border-bottom: 1px solid #FFFFFF32;
   padding: 20px 27px;
+  -webkit-transition: border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out;
 }
 
 .header-nav a:hover, .footer-nav a:hover {
@@ -761,6 +767,16 @@ footer .container {
   vertical-align: middle;
   width: 72px;
   height: 68px;
+  -webkit-transition: border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out;
+}
+
+.social-btn:hover {
+  border-color: #5f5037;
+}
+
+.social-btn:active {
+  opacity: 0.5;
 }
 
 .footer-copyright {
@@ -813,6 +829,16 @@ footer .container {
   border: 1px solid #322d24;
   background: url(../img/htmlacademy.png) center no-repeat #1b1b1b;
   margin-right: 27px;
+  -webkit-transition: border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out;
+}
+
+.html-logo:hover {
+  border-color: #5f5037;
+}
+
+.html-logo:active {
+  opacity: 0.5;
 }
 
 .footer-copyright a {
